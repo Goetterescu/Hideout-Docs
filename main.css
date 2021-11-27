@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#menu {
+    background-color: grey;
+    border: 5px solid black;
+    padding: 1%;
+    text-align: center;
+}
+nav#menu a {
+    border-left: 3px dashed black;
+    border-right: 3px dashed black;
+    padding: 1%;
+}
+
+div#rule_container {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
