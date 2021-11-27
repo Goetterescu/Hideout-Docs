@@ -1,0 +1,44 @@
+CHR:
+
+Before appealing against a case:
+- The Player who wants to appeal against a case has to be either the lawyer of the suspect or the suspect himself.
+- The target case has to be still active. This means that only cases which have been submitted during the current month can be appealed against in the respective month.
+- A judge, which would be any Moderator, should be active.
+- Same goes for the reporter or officer who reported the suspect.
+
+§1
+The judge has to be an experienced Player who knows the BTL, VCG and CHR.
+§2.1
+Court hearings must not be arranged. Lawyers/Players and the judge are not allowed to have a discussion related to the case outside of the court.
+    §2.2
+    Court hearings are only allowed to be attempted by the suspect, his lawyer (if present) and the judge. Interviews can be held after the hearing.
+    §2.3
+    The judge must be a Player who knows the case and the guidelines.
+    §2.4
+    The lawyer must be a Player who knows the case and the guidelines.
+§3
+The case can only be dismissed by decision of the judge.
+§4.1
+The case can only be dismissed if it's false or not containing enough proof. The judge has to publish the respective paragraph when he is dismissing a case. Please read the paragraphs below.
+    §4.2
+    False information can dismiss a case.
+    §4.3
+    Scam can dismiss a case.
+    §4.4
+    False or missing proof can dismiss a case.
+§5
+Every case can be appealed against only once. A failed appeal will be marked in the recent violations page.
+§6
+An already dismissed case cannot be turned in again. The points will be removed forever.
+§7
+Moderations will be forced to confront Players who misused this system. This will happen if rules from §1 and §2 are being violated.
+§8
+Additional rules can be created if necessary. This way we can ensure that justice will be served the right way.
+§9.1
+Suspects can enter the court hearing by themselves or with one lawyer.
+    §9.2
+    The court room can also be entered by the lawyer without the suspect.
+    §9.3
+    The reporter or officer can be present during the court hearing and is allowed to speak up.
+§10
+Violation points can be transferred between Players.

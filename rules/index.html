@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rules</title>
+        <link rel="stylesheet" href="../main.css">
+        <style>
+            nav a {
+                padding: 1%;
+            }
+            nav {
+                padding-top: 2%;
+            }
+            iframe {
+                display: block;
+                margin: auto;
+                width: 85%;
+                height: 30em; /* We should try to adjust the height to the content */
+            }
+
+            /* This is not working (yet) */
+            iframe>pre {
+                font-family: monospace;
+                font-weight: bold;
+                font-size: larger;
+            }
+
+            p#more_info {
+                text-align: center;
+                text-decoration: underline;
+            }
+        </style>
+        <script src="main.js"></script>
+    </head>
+    <body onload="check_workers();">
+        <h1>Rules</h1>
+
+        <div id="rule_container">
+            <i>
+                <nav>
+                    General:
+                    <a href="game.txt" target="rule_display" onclick="show('game')">RoR Server Rules</a>
+                    <a href="discord.txt" target="rule_display" onclick="show('discord')">Discord Server Rules</a>
+                    <a href="CHR.txt" target="rule_display" onclick="show('chr')">Crime Handling Ruleset</a>
+                </nav>
+                <nav>
+                    Traffic:
+                    <a href="BTL.txt" target="rule_display" onclick="show('btl')">Basic Traffic Laws</a>
+                    <a href="VCG.txt" target="rule_display" onclick="show('vcg')">Vehicle Condition Guideline</a>
+                </nav>
+                <nav>
+                    Roleplaying (RoR):
+                    <a href="general_rp.txt" target="rule_display" onclick="show('general_rp')">General</a>
+                </nav>
+            </i>
+        </div>
+        
+        <br>
+        <iframe src="empty.html" name="rule_display" height="30%" width="85%" title="Rules"></iframe>
+        <p id="more_info">More information will be displayed here, if needed (this is an automatic function)<br>
+        Please note that the info will remain here until you trigger the next one</p>
+    </body>
+</html>

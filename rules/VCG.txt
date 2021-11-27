@@ -1,0 +1,46 @@
+VCG:
+
+§1
+Head, rear and brake lights should be fully functional and visible, if equipped.
+§2
+Blinkers should be fully functional and visible, if equipped.
+§3
+Special lighting, mostly found on construction equipment, should be undamaged.
+§4.1
+All external parts of the vehicle must be hold in place. They should not reach out of the vehicles dimensions. This prevents damaging other things when bypassing.
+    §4.2
+    The vehicle should be equipped with one mirror on any side.
+    §4.3
+    The vehicle should not be of smaller dimensions than the load.
+§5
+The alignment of all axles which have permanent contact with the ground has to be straight.
+§6
+The vehicle should not leave its lane during a 15 meter drive without any steering input.
+§7
+All lighting mentioned in §1 and §2 should be undamaged and useable.
+§8
+All useable doors should close and open completely at any time.
+§9
+The tires on the axles mentioned in §5 should be undamaged.
+
+
+Trailers:
+
+§10.1
+Trailers have to be road safe at any time. This state is defined.
+§10.2
+All lighting, if equipped, should be 100% functional and visible.
+§10.3
+Strapping points for loads should be present.
+§10.4
+If there are no strapping points, there should be a cage or similar semi enclosed area. Fully closed boxes are suggested.
+§10.5
+All tires, even lift able, have to be in a perfect condition.
+§10.6
+The alignment of the axles should be "road safe". This condition is stated by the police.
+§10.7
+Doors and ramps should be able to close.
+§10.8
+All axles of the trailer should have good contact with the ground.
+§10.9
+Loads should not stick out of the dimensions of the trailer.

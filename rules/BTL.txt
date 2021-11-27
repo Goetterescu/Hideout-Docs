@@ -1,0 +1,82 @@
+BTL:
+
+§1.1
+Players have to give way for their right-hand-side traffic on intersections with no clear priority.
+    §1.2
+    Give-way-lines (stretched out triangles) mark roads on which you have to yield for other traffic.
+    §1.3
+    If there is a road in the intersection, with a continuous center line, it's a main road. This means right of way.
+    §1.4
+    Crosswalks right in front of you next to a intersection are a sign to yield for other traffic.
+    §1.5
+    Traffic lights, like on Neoqueretaro, are not synchronized between players. This means that they're not relevant.
+§2
+Any Damage on other property can get you fined.
+§3
+It's not allowed to park on main or priority roads.
+§4
+It's not allowed to park on highways, or 10 meters next to a highway. The same goes for freeways.
+§5
+The speed limit intercity is 60 km/h (about 40 mph). Only excessive speeding is a crime. This is being judged by the police.
+§6
+There is no speed limit for high-, free- and speedways. Except for §29.
+§7
+On high- and speedways trucks have to stay on the right lane.
+§8
+Parking on roads is only allowed if you're not slowing down the traffic flow.
+§9
+You have to yield for vehicles coming from the front, if you want to turn left or do a U-turn.
+§10
+The use of hazard lights, horns and special lights should not be abused.
+§11
+Vehicles have to be in a driveable and road safe condition at all times. All paragraphs of the vehicle condition guideline have to be met.
+§12
+Emergency service vehicles have to be equipped with their specific lighting.
+§13
+Emergency services have the right of way in the case of an emergency.
+§14
+Trailers of all kinds have to be able to move freely around the hook.
+§15
+Loads are not allowed to be taller as the truck or trailer, whichever is greater.
+§16
+Loads are not allowed to stick out more than 2 meters, about a player length, over the rear lights of the vehicle/trailer.
+§17
+Players have to stop for filters.
+§18
+Players have to follow basic real life traffic laws. Common sense should be a thing.
+§19
+Right hand side traffic is the only allowed one.
+§20
+Loads have to be secured either with ropes or enclosed areas, like vans.
+§21
+Equipment is only allowed to be moved on roads with hazard or warning lights.
+§22
+All traffic has to stop for police officers, if requested.
+§23
+Vehicles are allowed to cruise with a maximum of 100 km/h outside of cities. Except for §29.
+§24
+Trucks with a weight of over eight tons are not allowed to park on sidewalks.
+§25
+Ramps and doors of trucks/trailers are allowed to be extended and used to hold loads. §16 can be ignored, the end of the door/ramp plus 2 meters would be the new max. loading area.
+§26.1
+Driving instructors are allowed to teach other Players. Both, the instructor and the learner won't get violation points. Serious infractions (mostly the result of reckless driving) can get one or both Players fined.
+    §26.2
+    The driving instructor has to be inside of the learners vehicle at all times.
+    §26.3
+    The command –acinstructor has to be used by the instructor before he starts a session.
+    §26.4
+    The current driving instructors are Trucker_Gigi and Pixel.
+§27
+Traffic signs can be ignored if they don't make sense. Otherwise Players have to follow the instructions given by those.
+§28.1
+Not road safe vehicles are illegal to drive and can be dysfunctioned by the police.
+    §28.2
+    Vehicles which are not meeting every requirement from the VCG are considered "not road safe".
+    §28.3
+    Vehicles which are not equipped with head, rear, brake lights and/or blinkers are not road safe.
+    §28.4
+    Not road safe vehicles are considered a threat and might cause accidents. This means that they can be blamed for any case which involves such vehicles.
+§29
+Vehicles and combinations with a weight of over eight tons are only allowed to drive up to 80 km/h (about 50 mph).
+§30
+Vehicles and combinations with a weight of over eight tons have to pay a highway toll of max. 100 Gigis (to Beholder). Only active Police officers are allowed to charge Drivers. Drivers have to pay the toll before using the highway. Drivers do not have to pay it for every use, just once every real-world-day.
