@@ -1,0 +1,12 @@
+body {
+    font-size: larger;
+    font-weight: bold;
+    background-color: black;
+    color: snow;
+}
+b1 {
+    font-weight: bolder;
+}
+p {
+    font-family: monospace;
+}
