@@ -1,5 +1,4 @@
 let work;       // This boolean allows info about rules to be displayed as HTML content
-let clear_it;   // This boolean determines if it's needed to clear the info display
 let empty_msg = "There is no information for this article"; // Message for empty info display
 
 function check_workers() {
@@ -7,37 +6,43 @@ function check_workers() {
     if (typeof(Worker) !== "undefined") {
         work = true;
     } else {
-        alert("Web Workers not working! This page might not work as expected.");
+        alert("Web Workers not working! This page might not perform as expected.");
         work = false;
     }
 }
-
+/*
+I know, I know...
+We are not using Web Workers here, but maybe some day!
+*/
 
 
 function run(com) {
-    clear_it = true; // Let's activate the clearing thingy, because otherwise I have to do it in every case where I don't want to clear the info display
     // Check if Web Workers is working
     if (work = true) {
+        document.getElementById("more_info").innerHTML = empty_msg; // Clear the info box
         switch (com) { // Now just check what info should be displayed and do so
             case "general_rp":
                 window.open('general_rp.html', 'rule_display');
             break;
-            case "vcg":
+            case "VCG":
                 window.open('VCG.html', 'rule_display');
                 document.getElementById("more_info").innerHTML = "We will show some example images here soon!";
                 clear_it = false; 
             break;
-            case "btl":
-                window.open('BTL.html', 'rule_display');
+            case "BTL":
+                window.open(com + '.html', 'rule_display');
             break;
-            case "chr":
-                window.open('CHR.html', 'rule_display');
+            case "CHR":
+                window.open(com + 'CHR.html', 'rule_display');
             break;
             case "discord":
-                window.open('discord.html', 'rule_display');
+                window.open(com + '.html', 'rule_display');
             break;
             case "game":
-                window.open('game.html', 'rule_display');
+                window.open(com + '.html', 'rule_display');
+            break;
+            case "economy":
+                window.open(com + '.html', 'rule_display');
             break;
             default: // Output error message when there is no match (info type). This can happend when I'm lazy
                 console.error("Switch failed. Info-type: " + com + ". This is no Issue!");
@@ -46,12 +51,7 @@ function run(com) {
         }
         console.log("Info-type: " + com); // Log the info type
 
-        if (clear_it == true) {
-            // Clear info when none present
-            document.getElementById("more_info").innerHTML = empty_msg;
-        }
-
-    } else {
+    } else { // If Web Workers are not working (lol) tell the user that his shitbox can't do it
         document.getElementById("more_info").innerHTML = "Web Workers not working on your browser/device!";
     }
 }
