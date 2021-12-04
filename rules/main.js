@@ -1,5 +1,4 @@
 let work;       // This boolean allows info about rules to be displayed as HTML content
-let empty_msg = "There is no information for this article"; // Message for empty info display
 
 function check_workers() {
     // See if Web Workers is working
@@ -10,48 +9,31 @@ function check_workers() {
         work = false;
     }
 }
-/*
-I know, I know...
-We are not using Web Workers here, but maybe some day!
-*/
 
 
 function run(com) {
-    // Check if Web Workers is working
-    if (work = true) {
-        document.getElementById("more_info").innerHTML = empty_msg; // Clear the info box
-        switch (com) { // Now just check what info should be displayed and do so
-            case "general_rp":
-                window.open('general_rp.html', 'rule_display');
-            break;
-            case "VCG":
-                window.open('VCG.html', 'rule_display');
-                document.getElementById("more_info").innerHTML = "We will show some example images here soon!";
-                clear_it = false; 
-            break;
-            case "BTL":
-                window.open(com + '.html', 'rule_display');
-            break;
-            case "CHR":
-                window.open(com + 'CHR.html', 'rule_display');
-            break;
-            case "discord":
-                window.open(com + '.html', 'rule_display');
-            break;
-            case "game":
-                window.open(com + '.html', 'rule_display');
-            break;
-            case "economy":
-                window.open(com + '.html', 'rule_display');
-            break;
-            default: // Output error message when there is no match (info type). This can happend when I'm lazy
-                console.error("Switch failed. Info-type: " + com + ". This is no Issue!");
-                clear_it = false;
-            break;
-        }
-        console.log("Info-type: " + com); // Log the info type
+    showi("clear"); // Clear the info box 
 
-    } else { // If Web Workers are not working (lol) tell the user that his shitbox can't do it
-        document.getElementById("more_info").innerHTML = "Web Workers not working on your browser/device!";
-    }
+    // We are using this great function here for something really cool
+    if (com == "VCG" || com == "economy") { // Add rules with information here
+        window.open(com + '.html', 'rule_display');
+        showi(com); // This way we can say that we want to show additional info
+
+    } else if (com == "general_rp" || com == "BTL" || com == "CHR" || com == "discord" || com == "game") { // Add rules which have no info
+        window.open(com + '.html', 'rule_display');
+    } else {
+        // Output error message when there is no match (info type). This can happend when I'm lazy
+        console.error("Switch failed. Info-type: " + com + ". This is no Issue!");
+    } // Tada!!! This way we can easily add new rules and display them, with info and without!
+    console.log("Info-type: " + com); // Log the info type
 }
+
+function showi(x) { // Show information
+    if (x == "clear") {
+        window.open('info/clear.html', 'info_box');
+    } else if (x == "VCG" || x == "economy") { // Just continue on this with an or (||) if you want to add more information for more rules. Yes, I am clever and my coding is flexible
+        window.open('info/' + x + '.html', 'info_box');
+    } else {
+        console.error("Error in if-statement of function 'showi'. It seems like there was no match for information...");
+    }
+} 
