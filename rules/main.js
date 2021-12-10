@@ -1,31 +1,28 @@
-let work; // This boolean allows info about rules to be displayed as HTML content
+let work;       // This boolean allows info about rules to be displayed as HTML content
 
 function check_workers() {
     // See if Web Workers is working
     if (typeof(Worker) !== "undefined") {
         work = true;
     } else {
-        alert("Web Workers not working! This page might not work as expected.");
+        alert("Web Workers not working! This page might not perform as expected.");
         work = false;
     }
 }
 
 
-
-function show(com) {
-    // Check if Web Workers is working
-    if (work = true) {
-        switch (com) { // Now just check what info should be displayed and do so
-            case "general_rp":
-                document.getElementById("more_info").innerHTML = "This content might be interesting for you: <a target='_blank' href='https://forum.rigsofrods.org/resources/small-car-trailer.382/'>Camera Trailer</a>, <a target='_blank' href='https://forum.rigsofrods.org/resources/1999-ford-crown-victoria.147/'>Ford</a>, <a target='_blank' href='https://forum.rigsofrods.org/resources/gavril-omega-det.591/'>Gavril</a>";
-            break;
-            default: // Clear info when none present
-                document.getElementById("more_info").innerHTML = "There is no information for this article";
-                console.error("Switch failed in function show. Unknown info-type: " + com + ". This is no Issue!");
-            break;
-        }
-        console.log("Info-type: " + com);
+function run(com) {
+    // We are using this great function here for something really cool
+    if (com == "VCG" || com == "economy") { // Add rules with information here
+        window.open(com + '.html', 'rule_display');
+        window.open('info/' + com + '.html', 'info_box'); // Show additional info
+    } else if (com == "general_rp" || com == "BTL" || com == "CHR" || com == "discord" || com == "game" || com == "tos") { // Add rules which have no info
+        window.open(com + '.html', 'rule_display');
+        window.open('info/clear.html', 'info_box'); // Clear the info box
     } else {
-        document.getElementById("more_info").innerHTML = "Web Workers not working on your browser/device!";
-    }
+        // Output error message when there is no match (info type). This can happend when I'm lazy
+        console.error("Switch failed. Info-type: " + com + ". This is no Issue!");
+    } // Tada!!! This way we can easily add new rules and display them, with info and without!
+
+    console.log("Info-type: " + com); // Log the info type
 }

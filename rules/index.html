@@ -38,25 +38,27 @@
             <i>
                 <nav>
                     General:
-                    <a href="game.txt" target="rule_display" onclick="show('game')">RoR Server Rules</a>
-                    <a href="discord.txt" target="rule_display" onclick="show('discord')">Discord Server Rules</a>
-                    <a href="CHR.txt" target="rule_display" onclick="show('chr')">Crime Handling Ruleset</a>
+                    <button onclick="run('tos')">Terms of Service</button>
+                    <button onclick="run('game')">RoR Server Rules</button>
+                    <button onclick="run('discord')">Discord Server Rules</button>
+                    <button onclick="run('CHR')">Crime Handling Ruleset</button>
                 </nav>
                 <nav>
                     Traffic:
-                    <a href="BTL.txt" target="rule_display" onclick="show('btl')">Basic Traffic Laws</a>
-                    <a href="VCG.txt" target="rule_display" onclick="show('vcg')">Vehicle Condition Guideline</a>
+                    <button onclick="run('BTL')">Basic Traffic Laws</button>
+                    <button onclick="run('VCG')">Vehicle Condition Guideline</button>
                 </nav>
                 <nav>
                     Roleplaying (RoR):
-                    <a href="general_rp.txt" target="rule_display" onclick="show('general_rp')">General</a>
+                    <button onclick="run('general_rp')">General</button>
+                    <button onclick="run('economy')">Economy Law</button>
                 </nav>
             </i>
         </div>
         
         <br>
         <iframe src="empty.html" name="rule_display" height="30%" width="85%" title="Rules"></iframe>
-        <p id="more_info">More information will be displayed here, if needed (this is an automatic function)<br>
-        Please note that the info will remain here until you trigger the next one</p>
+        <br><hr><br>
+        <iframe src="info/initial.html" name="info_box" height="100%" width="85%" title="Informations" style="border:none"></iframe>
     </body>
 </html>
