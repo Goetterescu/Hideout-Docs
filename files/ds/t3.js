@@ -3,7 +3,7 @@ let Buggy = false;       // Toggle debug messages on and off. This is off by def
 let t = [];             // Array with the checkbox results of the theor. part
 let p = [];             // Same for the prac. part
 
-let t_q = 4;            // Amount of checkboxes on the theor. part
+let t_q = 6;            // Amount of checkboxes on the theor. part
 let p_q = 13;            // Same for the prac. part
 let total = t_q + p_q;  // Amount of total checkboxes
 

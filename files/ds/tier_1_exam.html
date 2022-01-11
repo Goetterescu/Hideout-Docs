@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tier One Exam Notes</title>
+        <title>Tier One Exam Checklist</title>
         <script src="t1.js"></script>
+        <script src="copy.js"></script>
         <link rel="stylesheet" href="ds.css">
     </head>
 
@@ -11,7 +12,7 @@
         <hr><hr>
 
         <h2>Requirements</h2>
-        <p>Students are required to pass this exam if they want to earn their badge. They are allowed to have a fail rate of up to 25%. 
+        <p>Students are required to pass this exam if they want to earn their badge.
             This exam can be done with or without an trailer attached to any road safe car (no trucks and no heavy vehicles are allowed).
             The car is not allowed to be equipped with more than two axles, the same goes for the optional trailer.<br> 
             The car and the optional trailer have to be both equipped with all blinkers, head, rear, brake and tail lights. The combination 
@@ -26,59 +27,60 @@
         <h3>Theoretical Test:</h3>
         <form name="form" onsubmit="return r_out()">
             Knowledge of signs:<br>
-            <input type="checkbox" name="t_sign">
+            <input type="checkbox" id="t1">
             <br><br>
             Right of way:<br>
-            <input type="checkbox" name="t_way">
+            <input type="checkbox" id="t2">
             <br><br>
             Speed limits:<br>
-            <input type="checkbox" name="t_limit">
+            <input type="checkbox" id="t3">
             <br><br>
             Weight and/or combination limits:<br>
-            <input type="checkbox" name="t_weight">
+            <input type="checkbox" id="t4">
             <br><br>
             General/Any:<br>
-            <input type="checkbox" name="t_general">
+            <input type="checkbox" id="t5">
             <hr>
 
 
             <h3>Practical Test:</h3>
             Driving style and comfort:<br>
-            <input type="checkbox" name="p_comf">
+            <input type="checkbox" id="p1">
             <br><br>
             Avoiding curbs:<br>
-            <input type="checkbox" name="p_curb">
+            <input type="checkbox" id="p2">
             <br><br>
             Awareness of environment:<br>
-            <input type="checkbox" name="p_envi">
+            <input type="checkbox" id="p3">
             <br><br>
             Speed:<br>
-            <input type="checkbox" name="p_speed">
+            <input type="checkbox" id="p4">
             <br><br>
             Reversing/Parking:<br>
-            <input type="checkbox" name="p_rev">
+            <input type="checkbox" id="p5">
             <br><br>
             Use of blinker:<br>
-            <input type="checkbox" name="p_blinker">
+            <input type="checkbox" id="p6">
             <br><br>
             Giving right of way:<br>
-            <input type="checkbox" name="p_way">
+            <input type="checkbox" id="p7">
             <br><br>
             General/Any:<br>
-            <input type="checkbox" name="p_general">
+            <input type="checkbox" id="p8">
             <br><br>
             Trailer drive:*<br>
-            <input type="checkbox" name="p_trailer">
+            <input type="checkbox" id="p9">
             <hr>
 
             <h3>Notes:</h3>
-            <input type="" name="note" maxlength="120" size="80%" title="120 Characters are allowed">
+            <textarea id="note" maxlength="200" placeholder="200 Characters are allowed" cols="50" rows="4"></textarea>
             <br><br><input type="submit">
         </form>
         <hr>
 
         <h3>Result:</h3>
         <p id="result">Results will be displayed here, please copy the content of this area for your protocol!</p>
+        <button style="margin:auto;display:block" onclick="copy('raw');">Copy HTML</button>
         <hr><hr>
     </body>
 </html>

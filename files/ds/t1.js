@@ -1,85 +1,68 @@
-let score1 = 0;
-let score2 = 0;
-let max_score = 14; // This is the total amount of checkboxes, please edit this if needed.
-let fail_rate = 25; // Allowed fails in %
+let Buggy = false;       // Toggle debug messages on and off. This is off by default, use the console if you want to debug
+
+let t = [];             // Array with the checkbox results of the theor. part
+let p = [];             // Same for the prac. part
+
+let t_q = 5;            // Amount of checkboxes on the theor. part
+let p_q = 9;            // Same for the prac. part
+let total = t_q + p_q;  // Amount of total checkboxes
+
+let t_r;                // Amount of fails on the theor. part
+let p_r;                // Same for the prac. part
+
+let fails;              // Total fails
+let alw_fails = 25;     // Allowed fails in percent
+// Calculate the amount of allowed fails
+let alw_fails_rel = total / 100 * alw_fails; 
+
+let stat;               // To store a message, depending on if the student did pass or not
 
 
 function r_out() {
-    // Theoretical
-    let t1 = document.forms["form"]["t_sign"].checked;
-    let t2 = document.forms["form"]["t_way"].checked;
-    let t3 = document.forms["form"]["t_limit"].checked;
-    let t4 = document.forms["form"]["t_weight"].checked;
-    let t5 = document.forms["form"]["t_general"].checked;
-    
-    if (t1 === true) {score1 += 1}
-    if (t2 === true) {score1 += 1}
-    if (t3 === true) {score1 += 1}
-    if (t4 === true) {score1 += 1}
-    if (t5 === true) {score1 += 1}
+    var i;
+    t_r = 0;
+    p_r = 0;
 
-
-    // Practical
-    let p1 = document.forms["form"]["p_comf"].checked;
-    let p2 = document.forms["form"]["p_curb"].checked;
-    let p3 = document.forms["form"]["p_envi"].checked;
-    let p4 = document.forms["form"]["p_speed"].checked;
-    let p5 = document.forms["form"]["p_rev"].checked;
-    let p6 = document.forms["form"]["p_blinker"].checked;
-    let p7 = document.forms["form"]["p_way"].checked;
-    let p8 = document.forms["form"]["p_general"].checked;
-    let p9 = document.forms["form"]["p_trailer"].checked;
-
-    if (p1 === true) {score2 += 1}
-    if (p2 === true) {score2 += 1}
-    if (p3 === true) {score2 += 1}
-    if (p4 === true) {score2 += 1}
-    if (p5 === true) {score2 += 1}
-    if (p6 === true) {score2 += 1}
-    if (p7 === true) {score2 += 1}
-    if (p8 === true) {score2 += 1}
-    if (p9 === true) {score2 += 1}
-
-
-    // Notes
-    let note = document.forms["form"]["note"].value;
-
-
-    // Send to next function and return false after that
-    show(score1, score2, note);
-    return false;
-}
-
-
-function show(s1, s2, n) {
-
-    // Do a little math (not meth)
-    s3 = s1+s2;         // Total failures
-    smax = max_score / 100 * fail_rate;
-
-    // See if the student passed
-    if (s3 < smax) {
-        sta = " pass ";
-    } else {
-        sta = " not pass ";
+    for (i = 1; i <= t_q; i++) {
+        t[i] = document.forms["form"]["t" + i].checked;
+        if (t[i] == true) {t_r++;}
+        // Debug
+        if (Buggy == true) {console.log("Logged: " + i + "\n\tas: t_" + t[i]);}
     }
 
-    // Check if there is an note
-    if (n == "") {n = "<i>No note</i>"};
+    if (Buggy == true) {console.log("\n \n");}
 
-    // Generate text for output
-    let l1 = "The Student did" + sta + "the exam.";
-    let l2 = 
-    "It was possible to score " + max_score + " points. The maximal amount of allowed fails was: " + smax.toFixed(2) + " (" + fail_rate + "%)";
-    let l3 = "Theoretical part fails: " + s1;
-    let l4 = "Practical part fails: " + s2 + "<br>" + "Total fails: " + s3;
-    // Output
-    document.getElementById("result").innerHTML = l1 + "<br>" + l2 + "<br>" + l3 + "<br>" + l4 + "<br><br>Note from the examinator:<br>" + n;
+    for (i = 1; i <= p_q; i++) {
+        p[i] = document.forms["form"]["p" + i].checked;
+        if (p[i] == true) {p_r++;}
+        // Debug
+        if (Buggy == true) {console.log("Logged: " + i + "\n\tas: p_" + p[i]);}
+    }
+    
+
+    fails = t_r + p_r;
+    var notes = document.getElementById("note").value; // Get the content of the textarea
+    // Generate message to tell them if the student passed or not
+    if (fails < alw_fails_rel) {
+        stat = "pass the exam.";
+    } else {
+        stat = "not pass the exam.";
+    }
+    // Generate the output text. Note the fact that the first command sets a value, while the others add more to it :D
+    document.getElementById("result").innerHTML = "The student did " + stat;
+    document.getElementById("result").innerHTML += "<br>It was possible to score " + total + " points.";
+    document.getElementById("result").innerHTML += "<br>The maximal amount of allowed fails was: " + alw_fails_rel.toFixed(2) + " (" + alw_fails + "%)";  
+    document.getElementById("result").innerHTML += "<br><br>Theoretical part fails: " + t_r;
+    document.getElementById("result").innerHTML += "<br>Practical part fails: " + p_r;
+    document.getElementById("result").innerHTML += "<br>Total fails: " + fails;
+    document.getElementById("result").innerHTML += "<br><br>Notes from the Examinator:<br><i>" + notes + "</i>";
+
 
     // Debug
-    console.log(s1);
-    console.log(s2);
-    console.log("\t" + s3);
-    console.log(n);
-    console.log(smax);
+    if (Buggy == true) {
+        console.log("\n \nResults of theo: \t" + t + "\nFails: " + t_r);
+        console.log("\n \nResults of prac: \t" + p + "\nFails: " + p_r);
+        console.log("\n \nNotes:\n" + notes);
+    }
+    return false;
 }
