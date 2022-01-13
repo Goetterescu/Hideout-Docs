@@ -9,3 +9,17 @@ h1, h2, h3 {
     text-align: center;
     text-decoration: underline;
 }
+
+#center {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#info_list>li {
+    cursor: help;
+}
+
+li {
+    width: fit-content;
+}
