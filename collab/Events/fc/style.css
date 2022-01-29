@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: snow;
+}
+table, td {
+    border: 3px solid grey;
+}
+th {
+    border-inline: 3px solid grey;
+    width: 50%; /* Interesting way of making all collumns the same width */
+}
+table {
+    width: 30%;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+h3 {
+    font-style: italic;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    border: 3px solid red;
+    margin: auto;
+}
+#loot, #results, #winners {
+    /*border: 3px solid blue;*/
+    padding: 3%;
+}
+#loot {
+    grid-area: 1/1/1/4;
+}
+#result {   /* We don't need this but let's do it anyway lol */
+    grid-area: 2/1/2/2;
+}
+#winners {
+    grid-area: 2/3/2/4;
+}
