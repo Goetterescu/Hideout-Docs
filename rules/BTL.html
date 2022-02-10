@@ -2,45 +2,216 @@
 <html>
     <head>
         <link rel="stylesheet" href="./rule.css">
+        <script>
+            // Move this to a seperate JS file
+            // We could use links with the more ID and this:
+            // onclick="show_more_text(this.innerHTML)"
+            // To display special information
+
+            function show_more_text(topic) {
+                switch (topic) {
+                    case "Heavy Combinations:":
+                    alert("yipie!");
+                    break;
+                    default:
+                    alert("Unknown: \n \t" + topic);
+                    break;
+                }
+            }
+        </script>
+        <style>
+            a#more {
+                cursor: help;
+            }
+        </style>
     </head>
     <body>
         <h3>BTL:</h3>
-        <ul>
-            <li>§1.1<br>     
-            Players have to give way for their right-hand-side traffic on intersections with no clear priority.</li><ul>
-            <li>§1.2<br>
-            Give-way-lines (stretched out triangles) mark roads on which you have to yield for other traffic.</li>
-            <li>§1.3<br> 
-            If there is a road in the intersection, with a continuous center line, it's a main road. This means right of way.</li>
-            <li>1.4<br> 
-            Crosswalks right in front of you next to a intersection are a sign to yield for other traffic.</li>
-            <li>§1.5<br> 
-            Traffic lights, like on Neoqueretaro, are not synchronized between players. This means that they're not relevant.</li></ul>
-            <li>§2<br> 
-            Any Damage on other property can get you fined.</li>
-            <li>§3<br> 
-            It's not allowed to park on main or priority roads.</li>
-            <li>§4<br> 
-            It's not allowed to park on highways, or 10 meters next to a highway. The same goes for freeways.</li>
-            <li>§5.1<br> 
-            The speed limit intercity is 60 km/h (about 40 mph). Only excessive speeding is a crime. This is being judged by the police.</li><ul>
-            <li>§5.2<br> 
-            There is no speed limit for high-, free- and speedways.</li>
-            <li>§5.3<br> 
-            Vehicles are allowed to cruise with a maximum of 100 km/h outside of cities.</li></ul>
-            <li>§6.1<br>
-            Vehicles are never allowed to drive faster than their vehicle or combination can handle. This paragraph can replace §5.</li><ul>
-            <li>§6.2<br> 
-            Vehicles and combinations with a weight between 8 and 25 tons are only allowed to drive with a speed of up to 80 km/h (about 50 mph).</li>
-            <li>§6.3<br>
-            Vehicles and combinations with a weight of over 25 tons are only allowed to drive with a speed of up to 60 km/h.</li></ul>
-            <li>§7<br> 
-            On high- and speedways trucks have to stay on the right lane.</li>
-            <li>§8<br> 
-            Parking on roads is only allowed if you're not slowing down the traffic flow.</li>
-            <li>§9<br> 
-            You have to yield for vehicles coming from the front, if you want to turn left or do a U-turn.</li>
-            <li>§10<br> 
+        <div>
+            <ul>
+                <li>
+                    §1<br>
+                    Drivers have to follow international traffic laws and use common sense on public roads. 
+                    The BTL, which includes the VCG, is only active on public roads and areas.
+                </li>
+                <ul>
+                    <li>
+                        §1.1<br>
+                        Common sense is a major factor on our roads. There are many unwritten rules.
+                    </li>
+                </ul>
+                <li>
+                    §2<br>
+                    All rules in the BTL have to be followed by all traffic members. Police officers and civilians can report traffic violations.
+                </li>
+                <li>
+                    §3<br>
+                    There are rules which can overwrite other rules. Any rule can be overwriten, if another rule says something different. Please note that judges and police officers 
+                    might understand the rules differently. Just use your common sense and justice will be on your side.
+                    Everyone driver has to be able to understand the rules. Feel free to ask an police officer or 
+                    moderator if you aren't able to understand a rule.
+                </li>
+                <li>
+                    §4<br>
+                    Traffic signs can be ignored if they don't make sense. Otherwise Players have to follow the instructions given by those.
+                </li>
+            </ul>
+        </div>
+        <hr><hr>
+        <div>
+            <h4>Intersections and right of way:</h4>
+            <ul>
+                <li>
+                    §101<br>
+                    We are using a modified version of the traffic laws from the USA here. 
+                    Cars have to stop, yield and/or continue into the intersection according to the type of intersection they are facing.
+                </li>
+                <li>
+                    §102<br>
+                    Intersection with no traffic lights, signs or similar can be adressed as "unregulated intersections". Don't be confused by that name, 
+                    these intersections are regulated, but in a light manner.
+                </li>
+                <ul>
+                    <li>
+                        §102.1<br>
+                        Unregulated Intersections have to be slowly approached, vehicles don't have to come to an complete halt. The drivers will then continue, in the order in which they 
+                        arrived. The first driver to approach the intersection will have to right to use the intersection first. Drivers don't have to yield for traffic, approaching the 
+                        intersection from the front.
+                    </li>
+                </ul>
+                <li>
+                    §103<br>
+                    Traffic lights are not working properly, therefore we are ignoring them. But they act like stop-signs for us.
+                </li>
+                <ul>
+                    <li>
+                        §103.1<br>
+                        This means that all traffic has to come to an complete halt before continuing.
+                    </li>
+                </ul>
+                <li>
+                    §104<br>
+                    Edge lines indicate that an road has the right of way. Traffic from side roads has to yield for the vehicles which are using the lane with the edge line. 
+                    Drivers don't have to come to an complete stop here.
+                </li>
+                <li>
+                    §105<br>
+                    U-Turns are generaly not allowed.
+                </li>
+                <li>
+                    §106<br>
+                    You have to yield for vehicles coming from the front, if you want to turn left.
+                </li>
+                <li>
+                    §107<br>
+                    It is allowed to cross solid and double solid lines, if you are turning. Some intersections feature these lines, so you can ignore them when turning.
+                </li>
+                <li>
+                    §108<br>
+                    Drivers who want to park or maneuvor their vehicle/combination around have to yield for all other traffic and not block their path.
+                </li>
+                <ul>
+                    <li>
+                        §108.1<br>
+                        Drivers who already began their maneuvor or parking process, after following the above, have the right of way and can continue their move even when other traffic is 
+                        approaching. All other traffic has to yield and keep safe distance from the maneuvering vehicle/combination.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Parking:</h4>
+            <ul>
+                <li>
+                    §201<br>
+                    It's not allowed to park on main or priority roads.
+                </li>
+                <li>
+                    §202<br>
+                    It's not allowed to park on highways, or 10 meters next to a highway. The same goes for freeways.
+                </li>
+                <li>
+                    §203<br>
+                    Parking on roads is only allowed if you're not slowing down the traffic flow.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Speed:</h4>
+            <ul>
+                <li>
+                    §301<br>
+                    The speed limit intercity is 60 km/h (about 40 mph). Only excessive speeding is a crime.
+                </li>
+                <li>
+                    §302<br>
+                    Vehicles are allowed to cruise with a maximum of 100 km/h outside of cities.
+                </li>
+                <li>
+                    §303<br>
+                    There is no speed limit for high-, free- and speedways.
+                </li>
+                <li>
+                    §304<br>
+                    Drivers are never allowed to drive faster than their vehicle or combination can handle.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Special traffic:</h4>
+            <ul>
+                <li>§401</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Misc:</h4>
+            <ul>
+                <li>
+                    §501<br>
+                    Any damage on other property is a crime and against the BTL.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Heavy Combinations:</h4>
+            <ul>
+                <li>
+                    §601<br>
+                    Vehicles and/or combinations with a combined weight of 8 tons or more fall under the rules below. The DOTAS decided to make special laws for these.
+                </li>
+                <li>
+                    §602<br>
+                    Heavy Combinations have to stay on the rightmost lane when using rural roads, high- and speedways.
+                </li>
+                <li>
+                    §603<br>
+                    Trucks are dangerous at high speed. Therefore drivers are not allowed to drive faster than the DOTAS suggestes.
+                </li>
+                <ul>
+                    <li>
+                        §604.1<br>
+                        Vehicles and combinations with a weight between 8 and 25 tons are only allowed to drive with a speed of up to 80 km/h (about 50 mph).
+                    </li>
+                    <li>
+                        §604.2<br>
+                        Vehicles and combinations with a weight of over 25 tons are only allowed to drive with a speed of up to 60 km/h.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </body>
+</html>
+
+<!--
+Notes can be written here:
+
+
+
             The use of hazard lights, horns and special lights should not be abused.</li>
             <li>§11<br> 
             Vehicles have to be in a driveable and road safe condition at all times. All paragraphs of the vehicle condition guideline have to be met.</li>
@@ -95,12 +266,5 @@
             Drivers do not have to pay it for every use, just once every real-world-day.</li>
             <li>§29<br>
             Traffic lights should be treated like stop signs.</li>
-        </ul>
-    </body>
-</html>
-
-<!--
-Notes can be written here:
-
 
 -->
