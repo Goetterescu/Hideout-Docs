@@ -23,6 +23,10 @@
             a#more {
                 cursor: help;
             }
+            summary>h4 {
+                display: contents;
+                cursor: help;
+            }
         </style>
     </head>
     <body>
@@ -53,13 +57,20 @@
                 </li>
                 <li>
                     §4<br>
-                    Traffic signs can be ignored if they don't make sense. Otherwise Players have to follow the instructions given by those.
+                    Traffic signs can be ignored if they don't make sense. Otherwise drivers have to follow the instructions given by those.
+                </li>
+                <li>
+                    §5<br>
+                    We are using the metric system on our roads, so all road signs have to be read in km/h.
+                </li>
+                <li>
+                    §6<br>
+                    Right hand side traffic is the only allowed one.
                 </li>
             </ul>
         </div>
         <hr><hr>
-        <div>
-            <h4>Intersections and right of way:</h4>
+        <details><summary><h4>Intersections and right of way:</h4></summary>
             <ul>
                 <li>
                     §101<br>
@@ -104,7 +115,8 @@
                 </li>
                 <li>
                     §107<br>
-                    It is allowed to cross solid and double solid lines, if you are turning. Some intersections feature these lines, so you can ignore them when turning.
+                    It is allowed to cross solid and double solid lines, if you are crossing an intersection. 
+                    Some intersections feature these lines, so you can ignore them when turning.
                 </li>
                 <li>
                     §108<br>
@@ -118,10 +130,9 @@
                     </li>
                 </ul>
             </ul>
-        </div>
+        </details>
         <hr>
-        <div>
-            <h4>Parking:</h4>
+        <details><summary><h4>Parking:</h4></summary>
             <ul>
                 <li>
                     §201<br>
@@ -135,11 +146,14 @@
                     §203<br>
                     Parking on roads is only allowed if you're not slowing down the traffic flow.
                 </li>
+                <li>
+                    §204<br>
+                    Trucks with a weight of over eight tons are not allowed to park on sidewalks.
+                </li>
             </ul>
-        </div>
+        </details>
         <hr>
-        <div>
-            <h4>Speed:</h4>
+        <details><summary><h4>Speed:</h4></summary>
             <ul>
                 <li>
                     §301<br>
@@ -158,27 +172,89 @@
                     Drivers are never allowed to drive faster than their vehicle or combination can handle.
                 </li>
             </ul>
-        </div>
+        </details>
         <hr>
-        <div>
-            <h4>Special traffic:</h4>
+        <details><summary><h4>Special traffic:</h4></summary>
             <ul>
-                <li>§401</li>
+                <li>
+                    §401<br>
+                    Emergency service vehicles have to be equipped with their specific lighting.
+                </li>
+                <ul>
+                    <li>
+                        §401.1<br>
+                        Emergency services have to make themselfes visible for other traffic members. They have to make sure not to endanger other drivers.
+                    </li>
+                </ul>
+                <li>
+                    §402<br>
+                    Emergency services have the right of way in the case of an emergency.
+                </li>
+                <ul>
+                    <li>
+                        §402.1<br>
+                        Emergency services can also ignore speed and parking restrictions, as well as all other traffic-signs, including stop-signs.
+                    </li>
+                </ul>
+                <li>
+                    §403<br>
+                    All traffic has to stop for filters and police officers. Drivers always have to stop for filters. Police officers on the other hand, will ask you to stop.
+                </li>
+                <li>
+                    §404<br>
+                    Driving instructors are allowed to teach other Players. Both, the instructor and the learner won't get violation points. 
+                    Serious infractions (mostly the result of reckless driving) can get the instructor fined.
+                </li>
+                <ul>
+                    <li>
+                        §404.1<br>
+                        The driving instructor has to be inside of the learners vehicle at all times.
+                    </li>
+                    <li>
+                        §404.2<br>
+                        The command –acinstructor has to be used by the instructor before he starts a session.
+                    </li>
+                </ul>
             </ul>
-        </div>
+        </details>
         <hr>
-        <div>
-            <h4>Misc:</h4>
+        <details><summary><h4>Combinations:</h4></summary>
             <ul>
                 <li>
                     §501<br>
-                    Any damage on other property is a crime and against the BTL.
+                    The use of hazard lights, horns and special lights should not be abused.
                 </li>
+                <li>
+                    §502<br>
+                    Vehicles have to be in a driveable and road safe condition at all times. All paragraphs of the vehicle condition guideline have to be met.
+                </li>
+                <li>
+                    §503<br>
+                    Loads have to be secured either with ropes or enclosed areas, like vans.
+                </li>
+                <li>
+                    §504<br>
+                    Combinations which are not meeting every requirement of the VCG are considered "not road safe".
+                </li>
+                <ul>
+                    <li>
+                        §504.1<br>
+                        Combinations which are not equipped with head, rear, brake lights and/or blinkers are not road safe.
+                    </li>
+                    <li>
+                        §504.2<br>
+                        Not road safe combinations are considered a threat and might cause accidents. 
+                        This means that they can be blamed for any case which involves such combinations.
+                    </li>
+                    <li>
+                        §504.3<br>
+                        Not road safe combinations are illegal to drive and can be dysfunctioned by the police.
+                    </li>
+                </ul>
             </ul>
-        </div>
+        </details>
         <hr>
-        <div>
-            <h4>Heavy Combinations:</h4>
+        <details><summary><h4>Heavy Combinations:</h4></summary>      
             <ul>
                 <li>
                     §601<br>
@@ -190,7 +266,7 @@
                 </li>
                 <li>
                     §603<br>
-                    Trucks are dangerous at high speed. Therefore drivers are not allowed to drive faster than the DOTAS suggestes.
+                    Trucks are dangerous at high speed. Therefore drivers are not allowed to drive faster than the DOTAS suggestes below.
                 </li>
                 <ul>
                     <li>
@@ -203,7 +279,20 @@
                     </li>
                 </ul>
             </ul>
-        </div>
+        </details>
+        <hr>
+        <details><summary><h4>Misc:</h4></summary>
+            <ul>
+                <li>
+                    §701<br>
+                    Any damage on other property is a crime and against the BTL.
+                </li>
+                <li>
+                    §702<br>
+                    Equipment is only allowed to be moved on roads with hazard or warning lights.
+                </li>
+            </ul>
+        </details>
     </body>
 </html>
 
@@ -211,60 +300,7 @@
 Notes can be written here:
 
 
-
-            The use of hazard lights, horns and special lights should not be abused.</li>
-            <li>§11<br> 
-            Vehicles have to be in a driveable and road safe condition at all times. All paragraphs of the vehicle condition guideline have to be met.</li>
-            <li>§12<br> 
-            Emergency service vehicles have to be equipped with their specific lighting.</li>
-            <li>§13<br> 
-            Emergency services have the right of way in the case of an emergency.</li>
-            <li>§14<br> 
-            Trailers of all kinds have to be able to move freely around the hook.</li>
-            <li>§15<br> 
-            Loads are not allowed to be taller as the truck or trailer, whichever is greater.</li>
-            <li>§16<br> 
-            Loads are not allowed to stick out more than 2 meters, about a player length, over the rear lights of the vehicle/trailer.</li>
-            <li>§17<br> 
-            Players have to stop for filters.</li>
-            <li>§18<br> 
-            Players have to follow basic real life traffic laws. Common sense should be a thing.</li>
-            <li>§19<br> 
-            Right hand side traffic is the only allowed one.</li>
-            <li>§20<br> 
-            Loads have to be secured either with ropes or enclosed areas, like vans.</li>
-            <li>§21<br> 
-            Equipment is only allowed to be moved on roads with hazard or warning lights.</li>
-            <li>§22<br> 
-            All traffic has to stop for police officers, if requested.</li>
-            <li>§23<br> 
-            Trucks with a weight of over eight tons are not allowed to park on sidewalks.</li>
-            <li>§24<br> 
-            Ramps and doors of trucks/trailers are allowed to be extended and used to hold loads. 
-            §16 can be ignored, the end of the door/ramp plus 2 meters would be the new max. loading area.</li>
-            <li>§25.1<br> 
-            Driving instructors are allowed to teach other Players. Both, the instructor and the learner won't get violation points. 
-            Serious infractions (mostly the result of reckless driving) can get one or both Players fined.</li><ul>
-            <li>§25.2<br> 
-            The driving instructor has to be inside of the learners vehicle at all times.</li>
-            <li>§25.3<br> 
-            The command –acinstructor has to be used by the instructor before he starts a session.</li></ul>
-           <li>§26<br> 
-            Traffic signs can be ignored if they don't make sense. Otherwise Players have to follow the instructions given by those.</li>
-            <li>§27.1<br> 
-            Not road safe vehicles are illegal to drive and can be dysfunctioned by the police.</li><ul>
-            <li>§27.2<br> 
-            Vehicles which are not meeting every requirement from the VCG are considered "not road safe".</li>
-            <li>§27.3<br> 
-            Vehicles which are not equipped with head, rear, brake lights and/or blinkers are not road safe.</li>
-            <li>§27.4<br> 
-            Not road safe vehicles are considered a threat and might cause accidents. 
-            This means that they can be blamed for any case which involves such vehicles.</li></ul>
-            <li>§28<br> 
-            Vehicles and combinations with a weight of over eight tons have to pay a highway toll of max. 100 Gigis (to Beholder). 
-            Only active Police officers are allowed to charge Drivers. Drivers have to pay the toll before using the highway. 
-            Drivers do not have to pay it for every use, just once every real-world-day.</li>
-            <li>§29<br>
-            Traffic lights should be treated like stop signs.</li>
+          
+            
 
 -->
