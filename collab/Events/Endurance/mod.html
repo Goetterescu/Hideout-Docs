@@ -4,6 +4,11 @@
         <title>Endurance | For Supervisors</title>
         <meta charset="UTF-8">
         <script src="mod_main.js"></script>
+        <style>
+            button {
+                margin: 2%;
+            }
+        </style>
     </head>
 
     <body>
@@ -13,7 +18,7 @@
             <h2>Control Panel</h2>
             <form name="cp" onsubmit="return display_drivers()">
                 Number of Pilots:<br>
-                <input name="amount" type="number" max="10" min="1"><br>
+                <input name="amount" type="number" max="10" min="2"><br>
                 <input type="submit">
             </form>
             <br>
@@ -33,9 +38,7 @@
                 </ul>
             </i>
             <br>
-            <form>
-                <b id="i2">Missing Content</b>
-            </form>
+            <i id="i2">Missing Content</i>
         </div>
         <hr>
     </body>

@@ -21,6 +21,8 @@ function display_drivers() {
 
 
 function render_drivers(var1) {
+    document.getElementById("i2").innerHTML = "<h4>Results:</h4>";
+
     let driver_name = [];
     let driver_color = [];
     for (let index = 1; index <=var1; index++) {
@@ -30,21 +32,21 @@ function render_drivers(var1) {
     //alert(driver_name);
     //alert(driver_color);
 
-
+//</table><br><br>
     
     for (index = 0; index < driver_name.length; index++) {
+        let content_11 = "<div style='background-color:" + driver_color[index] + ";width:10%'>";
+        let content_12 = "<b style='margin:auto;display:block;width:fit-content'>" + driver_name[index] + "</b>";
+        let content_13 = "<b style='margin:1%' id='score_" + index + "'>DNF</b><br>";
+        let content_14 = "<button onclick='return calc(" + index + ", \"normal\")'>Lap</button><br>";
+        let content_15 = "<button onclick='return calc(" + index + ", \"crash\")'>Crash</button>";
+        let content_16 = "<button onclick='return calc(" + index + ", \"cch\")'>CC Hard</button><br>";
+        let content_17 = "<button onclick='return calc(" + index + ", \"ccm\")'>CC Medium</button>";
+        let content_18 = "<button onclick='return calc(" + index + ", \"reckless\")'>Reckless</button></div><br><br>";
+        let content = content_11 + content_12 + content_13 + content_14 + content_15 + content_16 + content_17 + content_18;
         
-        let content_11 = "<div onclick='return calc(" + index + ")' style='display:block;width:10%;height:10%;background-color:" + driver_color[index] + "'>" + driver_name[index];
-        let content_12 = ">>>Score: <i id='score_" + index + "'>XX</i></div><br><br>";
         
-        if (index == 0) {
-            document.getElementById("i2").innerHTML = content_11;
-            document.getElementById("i2").innerHTML += content_12;
-        } else {
-            document.getElementById("i2").innerHTML += content_11;
-            document.getElementById("i2").innerHTML += content_12;
-        }
-        
+        document.getElementById("i2").innerHTML += content;
     }
     
     return false;
@@ -55,8 +57,39 @@ let score = [];
 for (let i = 0; i <= 10; i++) {
     score[i] = 0;
 }
-function calc(varx1) {
-    score[varx1] += 1;
+function calc(varx1, mode) {
+    let s_normal = 1;
+    let s_c = -2;
+    let s_h_cc = -2;
+    let s_m_cc = -1;
+    let s_r = -1;
+
+    switch (mode) {
+        case "normal":
+            score[varx1] += s_normal;
+            break;
+    
+        case "crash":
+            score[varx1] += s_c;
+            break;
+
+        case "cch":
+            score[varx1] += s_h_cc;
+            break;
+
+        case "ccm":
+            score[varx1] += s_m_cc;
+            break;
+
+        case "reckless":
+            score[varx1] += s_r;
+            break;
+
+        default:
+            alert("!Error!");
+            break;
+    }
+    
     document.getElementById("score_" + varx1).innerHTML = score[varx1];
     return false;
 }
