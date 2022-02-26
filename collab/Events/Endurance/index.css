@@ -1,0 +1,48 @@
+body {
+    background-color: aqua;
+    font-size: 1.75vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+h1 {
+    margin: 2%;
+    text-shadow: 0.25vw 0.25vw grey;
+}
+/* Paragraphs */
+
+/* Menu */
+nav {
+    border: 0.25vw solid gold;
+    background-color: grey;
+    text-align: center;
+    padding: 1%;
+    width: 60%;
+    margin: auto;
+}
+nav i {
+    padding: 1%;
+    width: min-content;
+    height: min-content;
+    cursor: crosshair;
+}
+nav i:hover {
+    background-color: beige;
+}
+
+/* Page Parts */
+div.hidden {
+    display: none;
+}
+table, th, td {
+    border: 0.25vw solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0.5vw;
+}

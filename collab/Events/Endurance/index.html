@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Endurance Race</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    
+    <body>
+        <h1>Endurance Race</h1>
+        <nav>
+            <i onclick="redir('about')">About</i>
+            <i onclick="redir('tracks')">Tracks</i>
+            <i onclick="redir('cars')">Cars</i>
+            <i onclick="redir('skins')">Skins</i>
+            <br><br>
+            <i onclick="redir('credits')">Credits</i>
+            <i onclick="redir('tool')">Leaderboard Tool (not finished)</i>
+        </nav>
+        <br><br>
+
+        <!-- Our actual page -->
+        <div class="hidden" id="about">
+            <h2>About</h2>
+            <p style="text-align: center;">More information will be posted soon!</p>
+        </div>
+
+        <div class="hidden" id="tracks">
+            <h2>Tracks</h2>
+        </div>
+
+        <div class="hidden" id="cars">
+            <h2>Cars</h2>
+            <b>Here is a list with the cars which will be allowed during the event. Please note that we still need to tune each one and upload the new version on this website.</b>
+            <ul>
+                <li>Audi DTM</li>
+                <li>Honda Accord extreme tuning</li>
+                <li>Dodge Viper race</li>
+                <li>BMW e36 lightweight</li>
+            </ul>
+        </div>
+
+        <div class="hidden" id="skins">
+            <!--
+                
+            -->
+            <h2>Skins</h2>
+            <b>Feel free to down- or upload skinzips here!</b>
+            <h3>Downloads</h3>
+            <table style="width:40%">
+                <tr>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Author</th>
+                </tr>
+            </table>
+            <p>There are no skinzips for download, yet.<br>Feel free to make your own one, based on one of the cars mentioned on the cars-subpage.</p>
+            <hr>
+            <h4>Form</h4>
+            <form name="Skins" method="POST" data-netlify="true">
+                <b>
+                    Your Nickname:<br>
+                    <input name="nickname" type="text" required>*
+                    <br><br>
+                    Texture Name:<br>
+                    <input name="texture_name" type="text" required>*
+                    <br><br>
+                    Team:<br>
+                    <input name="team" type="text">
+                    <br><br>
+                    Skinzip:<br>
+                    <input type="file" name="skinzip" required>*
+                    <br><br>
+                </b>
+                <input type="submit">
+            </form>
+
+        </div>
+    </body>
+</html>
