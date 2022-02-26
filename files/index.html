@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Content</title>
+        <style>
+            table, th, td {
+                text-align: center;
+                margin: auto;
+                border: 0.25vw solid black;
+                font-size: 2vw;
+            }
+            td:first-child {
+                text-align: start;
+            }
+
+            check::after {
+                content: "☑";
+            }
+            notcheck::after {
+                content: "☒";
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1 style="text-align: center;font-size: 3vw;">Content Index</h1>
+        <table style="width: 80%">
+            <tr>
+                <th style="width: 65%">Name</th>
+                <th style="width: 15%;">Author</th>
+                <th>Finished?</th>
+            </tr>
+            <tr>
+                <td><a href="ds/tier_1_exam.html">Driving School Checklist Tier 1</a></td>
+                <td>Gigi</td>
+                <td><check></check></td>
+            </tr>
+            <tr>
+                <td><a href="ds/tier_2_exam.html">-||- Tier 2</a></td>
+                <td>Gigi</td>
+                <td><check></check></td>
+            </tr>
+            <tr>
+                <td><a href="ds/tier_3_exam.html">-||- Tier 3</a></td>
+                <td>Gigi</td>
+                <td><check></check></td>
+            </tr>
+        </table>
+    </body>
+</html>
