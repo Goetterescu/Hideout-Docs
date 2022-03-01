@@ -1,4 +1,4 @@
-let work;       // This boolean allows info about rules to be displayed as HTML content
+let work;       // Useless
 
 function check_workers() {
     // See if Web Workers is working
@@ -13,10 +13,10 @@ function check_workers() {
 
 function run(com) {
     // We are using this great function here for something really cool
-    if (com == "VCG" || com == "economy") { // Add rules with information here
+    if (com == "VCG" || com == "economy" || com == "BTL") { // Add rules with information here
         window.open(com + '.html', 'rule_display');
         window.open('info/' + com + '.html', 'info_box'); // Show additional info
-    } else if (com == "general_rp" || com == "BTL" || com == "CHR" || com == "discord" || com == "game" || com == "tos") { // Add rules which have no info
+    } else if (com == "general_rp" || com == "CHR" || com == "discord" || com == "game" || com == "tos") { // Add rules which have no info
         window.open(com + '.html', 'rule_display');
         window.open('info/clear.html', 'info_box'); // Clear the info box
     } else {

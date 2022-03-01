@@ -2,9 +2,16 @@ body {
 font-size: 1.5em;
 }
 
-h3, h4 {
+h3 {
     text-align: center;
+}
+
+h3, h4 {
     text-decoration: underline;
+}
+
+h4 {
+    width: fit-content;
 }
 
 ul>li {
