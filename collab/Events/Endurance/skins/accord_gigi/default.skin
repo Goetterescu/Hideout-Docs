@@ -1,0 +1,10 @@
+Gigi 77
+{
+    replaceTexture   = accordb.dds, default.png
+    preview          = default_preview.png
+    description      = The number 77 accord used by Trucker_Gigi
+    authorName       = Trucker Gigi
+    AuthorID         = 8943
+    GUID             = a1949276-124b-4adf-9cb1-454d46d2fbe4
+}
+

@@ -1,0 +1,12 @@
+Gigi 77
+{
+    replaceTexture   = E36TACHO.dds, default_tacho.png
+    replaceTexture   = E36SPEEDO.dds, default_speedo.png
+    replaceTexture   = E36_BODYLW.png, default_body.png
+    preview          = default_preview.png
+    description      = The number 77 BMW E36 used by Trucker_Gigi
+    authorName       = Trucker Gigi
+    AuthorID         = 8943
+    GUID             = 123-321-abc
+}
+
