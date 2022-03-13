@@ -4,6 +4,7 @@
         <title>Endurance | For Supervisors</title>
         <meta charset="UTF-8">
         <script src="mod_main.js"></script>
+        <script src="mod_data.js"></script>
         <style>
             button {
                 margin: 2%;
@@ -11,7 +12,7 @@
         </style>
     </head>
 
-    <body>
+    <body onload="race_modifiers.display_settings('settings');">
         <h1>Leaderboard Tool</h1>
         <hr>
         <div id="control_panel">
@@ -23,22 +24,17 @@
             </form>
             <br>
             <form name="second_cp" onsubmit="return render_drivers(document.forms['cp']['amount'].value)">
-                <b id="i1">Missing Input</b>
+                <b id="i1"></b>
             </form>
         </div>
         <hr>
         <div>
             <h3>Leaderboard</h3>
-            <i>
-                <ul>
-                    <li>Crashing: -2</li>
-                    <li>Hard CC: -2</li>
-                    <li>Medium CC: -1</li>
-                    <li>Reckless Driving: -1</li>
-                </ul>
+            <i><h4>Settings:</h4>
+                <ul id="settings"></ul>
             </i>
             <br>
-            <i id="i2">Missing Content</i>
+            <i id="i2"></i>
         </div>
         <hr>
     </body>

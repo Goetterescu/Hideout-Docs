@@ -1,6 +1,3 @@
-
-
-
 function display_drivers() {
 
     let amount = document.forms["cp"]["amount"].value;
@@ -29,10 +26,6 @@ function render_drivers(var1) {
         driver_name.push(document.forms["second_cp"]["driver_" + index + "_name"].value);
         driver_color.push(document.forms["second_cp"]["driver_" + index + "_color"].value);
     }
-    //alert(driver_name);
-    //alert(driver_color);
-
-//</table><br><br>
     
     for (index = 0; index < driver_name.length; index++) {
         let content_11 = "<div style='background-color:" + driver_color[index] + ";width:10%'>";
@@ -58,31 +51,25 @@ for (let i = 0; i <= 10; i++) {
     score[i] = 0;
 }
 function calc(varx1, mode) {
-    let s_normal = 1;
-    let s_c = -2;
-    let s_h_cc = -2;
-    let s_m_cc = -1;
-    let s_r = -1;
-
     switch (mode) {
         case "normal":
-            score[varx1] += s_normal;
+            score[varx1] += race_modifiers.lap;
             break;
     
         case "crash":
-            score[varx1] += s_c;
+            score[varx1] += race_modifiers.crash;
             break;
 
         case "cch":
-            score[varx1] += s_h_cc;
+            score[varx1] += race_modifiers.hard_cc;
             break;
 
         case "ccm":
-            score[varx1] += s_m_cc;
+            score[varx1] += race_modifiers.medium_cc;
             break;
 
         case "reckless":
-            score[varx1] += s_r;
+            score[varx1] += race_modifiers.reckless;
             break;
 
         default:
